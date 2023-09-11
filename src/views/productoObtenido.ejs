@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <%- include("partials/styles")%>
+</head>
+<body>
+    <%- include("partials/titulo")%>
+    <div class="contenedor_encabezado">
+        <%- include("partials/buscador")%>
+        <%- include("partials/carrito")%>
+    </div>
+    <%- include("partials/menuResponsive")%>
+    <div class="contenedor_principal">
+        <h3>Nuestros productos</h3>
+        <div class="contenedor_nuestro_productos">
+            <%- include("partials/menu")%>
+            <div class="contenedor_productos">
+                <%- content%>
+            </div>
+        </div>
+    </div>
+    <%- include("partials/scriptBootstrap")%>
+    <%- include("partials/scriptToastify.ejs")%>
+    <script src="/client.js"></script>
+</body>
+</html>

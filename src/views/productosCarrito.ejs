@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <%- include("partials/styles")%>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <%- include("partials/titulo")%>
+    <div class="contenedor_mi_carro">
+        <h3>Mi carrito</h3>
+    </div>
+    <div class="contenedor_productos_carro">
+
+    </div>
+    <div class="contenedor_total">
+        <p>Precio total:</p><p>$0</p>
+    </div>
+    <div class="contenedor_finalizar_compra">
+        <div class="contenedor_comprar">
+            <p>Comprar</p>
+        </div>
+    </div>
+    <%- include("partials/scriptBootstrap")%>
+    <%- include("partials/scriptSweetAlert.ejs")%>
+    <%- include("partials/scriptToastify.ejs")%>
+    <script src="/clientCarrito.js"></script>
+</body>
+</html>
